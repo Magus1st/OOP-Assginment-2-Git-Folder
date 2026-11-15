@@ -199,7 +199,9 @@ class CheckingAccount : public BankAccount {
             }
             else {
                 accountBalance -= amount + fee; // Deduct the amount and fee from the account balance
-                cout << "Withdrew $" << amount << ". /nNew balance: $" << accountBalance << "Fee: $" << fee << endl;
+                cout << "===============================" << endl;
+                cout << "Withdrew $" << amount << endl << "New balance: $" << accountBalance << endl << "Fee: $" << fee << endl;
+                cout << "===============================" << endl << endl;
                 cout << "\n\nPress enter to continue" << endl;
                 cin.ignore(); // Clear the input buffer
                 cin.get(); // Wait for user input before returning
